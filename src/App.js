@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home.js";
 import Offers from "./pages/Offers/Offers.js";
 import Map from "./pages/Map/Map.js";
 import Contact from "./pages/Contact/Contact.js";
-import "./App.css";
+import "./App.less";
 
 function App() {
   return (

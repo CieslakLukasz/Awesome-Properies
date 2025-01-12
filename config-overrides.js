@@ -1,32 +1,20 @@
-// config-overrides.js
 module.exports = function override(config, env) {
-  // Dodanie obsługi LESS do Webpacka
-  const lessRule = {
-    test: /\.less$/,
+  config.module.rules[1].oneOf.splice(2, 0, {
+    test: /\.less$/i,
+    exclude: /\.module\.(less)$/,
     use: [
+      { loader: "style-loader" },
+      { loader: "css-loader" },
       {
-        loader: "style-loader", // Zapisz style do DOM
-      },
-      {
-        loader: "css-loader", // Przetwórz CSS
-      },
-      {
-        loader: "less-loader", // Przetwórz LESS do CSS
+        loader: "less-loader",
         options: {
           lessOptions: {
-            modifyVars: {
-              // Możesz dodać zmienne LESS tutaj (np. dla kolorów)
-            },
-            javascriptEnabled: true, // Włącz wsparcie dla JavaScriptu w LESS
+            javascriptEnabled: true,
           },
         },
       },
     ],
-  };
-
-  // Znajdź i zastąp istniejącą regułę dla LESS
-  const rules = config.module.rules;
-  rules.push(lessRule);
+  });
 
   return config;
 };
