@@ -5,3 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  overflow: hidden;
+}
+
+header,
+main,
+footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section {
+  margin-bottom: 24px;
+  @media (width > 979px) {
+    margin-bottom: 48px;
+  }
+}
