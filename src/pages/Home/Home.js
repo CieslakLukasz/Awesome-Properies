@@ -1,10 +1,13 @@
 import React from "react";
 import "./Home.less";
+import Section from "../../components/Section/Section.js";
+import apartments from "../../data/tempOffersData.js";
 
 const Home = () => {
+  console.log(apartments);
   return (
     <>
-      <div id="main_banner">
+      <Section id="main_banner">
         <figure>
           <picture>
             <source
@@ -21,17 +24,17 @@ const Home = () => {
             <h1>Amazing properties</h1>
           </figcaption>
         </figure>
-      </div>
+      </Section>
 
-      <section>
-        <h2>Rekomendowane Oferty</h2>
+      <Section
+        title="Rekomendowane Oferty"
+        className="recommended-offers background_zone">
         <p>Najlepsze oferty wybrane specjalnie dla Ciebie!</p>
-      </section>
+      </Section>
 
-      <section>
-        <h2>SEO Strefa</h2>
+      <Section title="SEO Strefa" className="seo-section">
         <p>jakas strefa seo</p>
-      </section>
+      </Section>
     </>
   );
 };

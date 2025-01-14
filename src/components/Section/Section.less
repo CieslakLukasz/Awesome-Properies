@@ -1,0 +1,25 @@
+section {
+  margin-bottom: 24px;
+  @media (width > 979px) {
+    margin-bottom: 48px;
+  }
+
+  &.background_zone {
+    position: relative;
+    color: #f1f1f1;
+    padding: 12px 0;
+    @media (width > 979px) {
+      padding: 20px 0;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      left: calc(50% - 50vw);
+      background-color: #333;
+    }
+  }
+}
