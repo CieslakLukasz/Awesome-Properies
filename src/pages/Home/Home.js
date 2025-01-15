@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.less";
 import Section from "../../components/Section/Section.js";
+import Recomendations from "../../components/Recomendations/Recomendations.js";
 import apartments from "../../data/tempOffersData.js";
 
 const Home = () => {
-  console.log(apartments);
   return (
     <>
       <Section id="main_banner">
@@ -29,6 +29,7 @@ const Home = () => {
       <Section
         title="Rekomendowane Oferty"
         className="recommended-offers background_zone">
+        <Recomendations list={apartments} />
         <p>Najlepsze oferty wybrane specjalnie dla Ciebie!</p>
       </Section>
 
