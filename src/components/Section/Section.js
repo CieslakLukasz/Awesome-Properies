@@ -1,10 +1,12 @@
 import React from "react";
 import "./Section.less";
 
-const Section = ({ title = "", children, ...props }) => {
+const Section = ({ title = "", children, className = "", ...props }) => {
+  const sectionClassName = `section ${className}`.trim();
+
   return (
-    <section {...props}>
-      {title && <h2>{title}</h2>}
+    <section {...props} className={sectionClassName}>
+      {title && <h2 className="section__title">{title}</h2>}
       {children}
     </section>
   );
