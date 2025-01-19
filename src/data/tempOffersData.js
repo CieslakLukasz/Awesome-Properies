@@ -7,7 +7,7 @@ const apartments = [
     bedrooms: 3,
     description:
       "Przestronny apartament z widokiem na park. W pełni wyposażony, idealny dla rodziny.",
-    image: "https://example.com/images/apartment1.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Nowoczesne Studio",
@@ -16,7 +16,7 @@ const apartments = [
     rooms: 2,
     bedrooms: 1,
     description: "Stylowe studio w sercu miasta, idealne dla singla lub pary.",
-    image: "https://example.com/images/apartment2.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Luksusowy Penthouse",
@@ -25,7 +25,7 @@ const apartments = [
     rooms: 5,
     bedrooms: 3,
     description: "Ekskluzywny penthouse z panoramicznym widokiem na Warszawę.",
-    image: "https://example.com/images/apartment3.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Apartament Rodzinny",
@@ -35,7 +35,7 @@ const apartments = [
     bedrooms: 3,
     description:
       "Komfortowy apartament w cichej okolicy, blisko szkół i przedszkoli.",
-    image: "https://example.com/images/apartment4.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Klimatyczne Mieszkanie",
@@ -44,7 +44,7 @@ const apartments = [
     rooms: 3,
     bedrooms: 2,
     description: "Mieszkanie z duszą w zabytkowej kamienicy na Mokotowie.",
-    image: "https://example.com/images/apartment5.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Loft Industrialny",
@@ -54,7 +54,7 @@ const apartments = [
     bedrooms: 2,
     description:
       "Stylowy loft w industrialnym stylu, doskonały dla osób ceniących oryginalne wnętrza.",
-    image: "https://example.com/images/apartment6.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Apartament z Tarasem",
@@ -64,7 +64,7 @@ const apartments = [
     bedrooms: 2,
     description:
       "Przestronny apartament z dużym tarasem, idealny na letnie wieczory.",
-    image: "https://example.com/images/apartment7.jpg",
+    image: "images/apartments/apartment.webp",
   },
   {
     name: "Przytulne Mieszkanko",
@@ -73,7 +73,7 @@ const apartments = [
     rooms: 2,
     bedrooms: 1,
     description: "Przytulne mieszkanie na Żoliborzu, blisko terenów zielonych.",
-    image: "https://example.com/images/apartment8.jpg",
+    image: "images/apartments/apartment.webp",
   },
 ];
 
