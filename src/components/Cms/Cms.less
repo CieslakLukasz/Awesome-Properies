@@ -1,0 +1,23 @@
+.cms {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1.6rem;
+  @media (width > 979px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__photo {
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  }
+  &__text {
+    @media (width > 979px) {
+      padding: 3.2rem;
+      order: -1;
+    }
+  }
+}

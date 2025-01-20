@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.less";
 import Section from "../../components/Section/Section.js";
 import Recomendations from "../../components/Recomendations/Recomendations.js";
+import Cms from "../../components/Cms/Cms.js";
 import apartments from "../../data/tempOffersData.js";
 
 const Home = () => {
@@ -33,8 +34,8 @@ const Home = () => {
         <p>Najlepsze oferty wybrane specjalnie dla Ciebie!</p>
       </Section>
 
-      <Section title="SEO Strefa" className="seo-section">
-        <p>jakas strefa seo</p>
+      <Section title="Jak działamy" className="seo-section">
+        <Cms />
       </Section>
     </>
   );
