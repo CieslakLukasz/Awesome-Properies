@@ -10,6 +10,7 @@ module.exports = function override(config, env) {
         options: {
           lessOptions: {
             javascriptEnabled: true,
+            prependData: `@import "src/styles/variables.less";`,
           },
         },
       },

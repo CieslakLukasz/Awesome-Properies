@@ -4,7 +4,7 @@ import "./Navbar.less";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav class="background_zone">
       <ul>
         <li>
           <Link to="/">Strona Główna</Link>
