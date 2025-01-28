@@ -11,15 +11,26 @@
     }
   }
 
-  &__title {
+  .title {
     margin-bottom: var(--margin-md);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
     @media (width > 979px) {
-      margin-bottom: 48px;
+      margin-bottom: var(--margin-lg);
       font-size: 3.2rem;
+    }
+  }
+  .subtitle {
+    margin-bottom: var(--margin-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    @media (width > 979px) {
+      margin-bottom: var(--margin-md);
+      font-size: 2.4rem;
     }
   }
 }

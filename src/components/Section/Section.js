@@ -6,7 +6,7 @@ const Section = ({ title = "", children, className = "", ...props }) => {
 
   return (
     <section {...props} className={sectionClassName}>
-      {title && <h2 className="section__title">{title}</h2>}
+      {title && <h2 className="title">{title}</h2>}
       {children}
     </section>
   );

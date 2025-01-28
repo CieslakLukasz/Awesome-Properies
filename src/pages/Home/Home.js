@@ -4,6 +4,7 @@ import Section from "../../components/Section/Section.js";
 import Recomendations from "../../components/Recomendations/Recomendations.js";
 import Cms from "../../components/Cms/Cms.js";
 import apartments from "../../data/tempOffersData.js";
+import { cms1, cms2 } from "../../data/cmsData.js";
 
 const Home = () => {
   return (
@@ -27,6 +28,12 @@ const Home = () => {
         </figure>
       </Section>
 
+      {cms1 && (
+        <Section title={cms1.title} className="seo-section">
+          <Cms {...cms1} />
+        </Section>
+      )}
+
       <Section
         title="Rekomendowane Oferty"
         className="recommended-offers background_zone">
@@ -34,9 +41,11 @@ const Home = () => {
         <p>Najlepsze oferty wybrane specjalnie dla Ciebie!</p>
       </Section>
 
-      <Section title="Jak działamy" className="seo-section">
-        <Cms />
-      </Section>
+      {cms2 && (
+        <Section title={cms2.title} className="seo-section">
+          <Cms {...cms2} />
+        </Section>
+      )}
     </>
   );
 };
