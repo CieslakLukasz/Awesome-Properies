@@ -1,0 +1,18 @@
+.productList {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  &__item {
+    &:only-child {
+      figure {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

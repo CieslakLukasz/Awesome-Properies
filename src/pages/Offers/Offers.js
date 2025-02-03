@@ -1,10 +1,12 @@
 import React from "react";
+import ProductList from "../../components/ProductList/ProductList";
+import apartments from "../../data/tempOffersData.js";
 
 const Offers = () => {
   return (
-    <div>
+    <div className="section">
       <h1>Lista Ofert</h1>
-      <p>Tutaj znajdziesz wszystkie dostępne nieruchomości.</p>
+      <ProductList list={apartments} />
     </div>
   );
 };
